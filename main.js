@@ -1,14 +1,23 @@
 /* CONTACT FORM LOGIC */
 
-function getRadioValue()
-{
-    for (var i = 0; i < document.getElementsByName('type').length; i++)
-    {
-        if (document.getElementsByName('type')[i].checked)
-        {
-            return document.getElementsByName('type')[i].value;
-        }
+function yesnoCheck() {
+    if (document.getElementsByName('type').value === "Guest") {
+        document.getElementById('guest').style.display = 'block';
+        document.getElementById('vendor').style.display = 'none';
+        document.getElementById('other').style.display = 'none';
     }
-}
+    else if (document.getElementsByName('type').checked) {
+        document.getElementById('vendor').style.display = 'block';
+        document.getElementById('guest').style.display = 'none';
+        document.getElementById('other').style.display = 'none';
+    }
+    
+    else if (document.getElementsByName('type').checked) {
+        document.getElementById('other').style.display = 'block';
+        document.getElementById('guest').style.display = 'none';
+        document.getElementById('vendor').style.display = 'none';
+    }
 
-alert(getRadioValue()) 
+    else {
+}
+}

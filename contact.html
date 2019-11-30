@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html>
 
 <head>
@@ -8,7 +9,6 @@
 </head>
 
 <body>
-    <form>
         <h2>Rudgwick Steam and Country Fair Contact Form</h2>
         <p>Thank you for your interest in the Rudgwick Steam and Country Show! Please provide us with the appropriate
             information, your area of concern, and we will answer your questions
@@ -22,13 +22,13 @@
         </select>
 
         <div id="general">
-            <form id="generalForm" action="/subscribe" method="POST">
+            <form id="generalForm" action="" onsubmit="return false">
                 <h3>General Inquiries</h3>
                 <p><input type="text" required placeholder="Name"></p>
                 <p><input type="email" required placeholder="Email"></p>
                 <p><input type="tel" required placeholder="Phone Number"></p>
                 <textarea name="generalQ" rows="10" cols="50" placeholder="Put your question here." required></textarea>
-                <p><input type="submit" name="submit" /></p>
+                <p><input type="submit" name="submitButton" onclick="thankYou()" /></p>
             </form>
         </div>
 
@@ -39,7 +39,7 @@
                 <p><input type="email" required placeholder="Email"></p>
                 <p><input type="tel" required placeholder="Phone Number"></p>
                 <textarea name="generalQ" rows="10" cols="50" placeholder="Put your question here." required></textarea>
-                <p><input type="submit" onsubmit="submitForm()"></p>
+                <p><input type="submit" onclick="thankYou()"></p>
             </form>
         </div>
 
@@ -51,7 +51,7 @@
                 <p><input type="email" required placeholder="Business Email"></p>
                 <p><input type="tel" required placeholder="Business Phone Number"></p>
                 <textarea name="generalQ" rows="10" cols="50" placeholder="Put your question here." required></textarea>
-                <p><input type="submit" onsubmit="submitForm()"></p>
+                <p><input type="submit" onclick="thankYou()"></p>
             </form>
         </div>
 
@@ -62,10 +62,11 @@
                 <p><input type="email" required placeholder="Email"></p>
                 <p><input type="tel" required placeholder="Phone Number"></p>
                 <textarea name="generalQ" rows="10" cols="50" placeholder="Put your question here." required></textarea>
-                <p><input type="submit" onsubmit="submitForm()"></p>
+                <p><input type="submit" onclick="thankYou()"></p>
             </form>
         </div>
-    </form>
+
+<span id="thank_you"></span>
 </body>
 
 </html>

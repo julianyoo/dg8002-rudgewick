@@ -1,23 +1,15 @@
 /* CONTACT FORM LOGIC */
 
-function yesnoCheck() {
-    if (document.getElementsByName('type').value === "Guest") {
-        document.getElementById('guest').style.display = 'block';
-        document.getElementById('vendor').style.display = 'none';
-        document.getElementById('other').style.display = 'none';
+function validate() {
+    var getType = document.getElementById("formType");
+    var selectedValue = getType.options[getType.selectedIndex].value;
+    if (selectedValue == "general") {
+        alert("You selected general");
+    } else if (selectedValue == "park") {
+        alert("You selected Park!");
+    } else if (selectedValue == "vendor") {
+        alert("You selected vendor!");
+    } else if (selectedValue == "camping") {
+        alert("You selected camping!");
     }
-    else if (document.getElementsByName('type').checked) {
-        document.getElementById('vendor').style.display = 'block';
-        document.getElementById('guest').style.display = 'none';
-        document.getElementById('other').style.display = 'none';
-    }
-    
-    else if (document.getElementsByName('type').checked) {
-        document.getElementById('other').style.display = 'block';
-        document.getElementById('guest').style.display = 'none';
-        document.getElementById('vendor').style.display = 'none';
-    }
-
-    else {
-}
 }

@@ -72,14 +72,15 @@ html {
 
 /*Button*/
 
-.cta-btn{
+.cta-btn {
     background-color: white;
     border: none;
     padding: 8px 12px;
     box-shadow: 1px 1px 4px #aaa;
+    font-weight: 700;
 }
 
-.cta-btn:hover{
+.cta-btn:hover {
     box-shadow: 2px 2px 4px #aaa;
     cursor: pointer;
 }
@@ -127,7 +128,7 @@ li a,
 
 li a:hover,
 .dropdown:hover .dropbtn {
-   /* background-color: red;*/
+    /* background-color: red;*/
     text-decoration: underline;
     text-decoration-color: #FFE417;
 }
@@ -170,7 +171,7 @@ li.dropdown {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    padding-top:45px;
+    padding-top: 45px;
 }
 
 .hero-text {
@@ -182,7 +183,7 @@ li.dropdown {
     color: white;
 }
 
-.hero-tag{
+.hero-tag {
     font-family: 'Pacifico', sans-serif;
     text-decoration: underline;
     text-decoration-color: #FFE417;
@@ -190,63 +191,64 @@ li.dropdown {
 
 /*Events Carousel*/
 
-#events-carousel{
+#events-carousel {
     background-color: black;
     color: white;
     padding: 16px;
 }
 
-#events-carousel h2{
+#events-carousel h2 {
     margin: 0;
     padding: 16px 8px;
     font-size: 1.1em;
 }
 
-#events-carousel h3{
+#events-carousel h3 {
     font-weight: 400;
     font-size: 1em;
 }
 
-#events-carousel .col-3{
+#events-carousel .col-3 {
     padding: 4px;
     text-align: center;
 }
 
-#events-carousel img{
+#events-carousel img {
     border: 2px solid white;
     width: 100%;
 }
 
 /* Intro to Rudgwick*/
-#intro-section{
+#intro-section {
     padding: 16px;
 }
 
-#intro-section .col-6{
+#intro-section .col-6 {
     padding: 8px 16px;
 }
 
-.video-responsive{
-    overflow:hidden;
-    padding-bottom:56.25%;
-    position:relative;
-    height:0;
+.video-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
 }
-.video-responsive iframe{
-    left:0;
-    top:0;
-    height:100%;
-    width:100%;
-    position:absolute;
+
+.video-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
 }
 
 /*Countdown*/
-#countdown{
+#countdown {
     height: 200px;
+    text-align: center;
 }
 
-.countdown-title{
-    text-align: center;
+.countdown-title {
     color: #AE3939;
     font-weight: 700;
     font-size: 1.2em;
@@ -255,28 +257,50 @@ li.dropdown {
 /*Parallax CTA*/
 
 .parallax {
-  background-image: url("img/train-backdrop.jpg");
-  min-height: 300px; 
+    background-image: url("img/train-backdrop.jpg");
+    min-height: 300px;
 
-  /* Parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+    /* Parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* Align content*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
-.parallax p{
+.parallax p {
     margin: 0;
     font-size: 18px;
     font-weight: 700;
+    padding: 24px;
 }
 
 /*Footer*/
 
-.copyright{
+footer {
+    background-color: #AE3939;
+    color: white;
+    text-align: center;
+}
+
+footer h4 {
+    font-size: 1.2em;
+
+}
+
+footer p {
+    font-size: 0.8em;
+}
+
+.copyright {
     background-color: black;
     color: white;
-    margin:0;
+    margin: 0;
     padding: 8px;
     font-size: 10px;
     text-align: center;

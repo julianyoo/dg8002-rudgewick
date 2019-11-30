@@ -144,11 +144,3 @@ ul {
 
 
 /* form stuff */
-
-form input[required=required]:after,
-form select[required=required]:after,
-form textarea[required=required]:after
-{
-    color: red;
-    content: " *";
-}

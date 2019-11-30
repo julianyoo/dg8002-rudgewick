@@ -9,34 +9,53 @@
 
 <body>
     <form>
-        <h2>Contact Form</h2>
-        <select id="formType" onchange="validate()">
+        <h2>Rudgwick Steam and Country Fair Contact Form</h2>
+        <p>Thank you for your interest in the Rudgwick Steam and Country Show! Please provide us with the appropriate information, your area of concern, and we will answer your questions
+            as soon as we can!
+        </p>
+        <select id="formType" onchange="validate_contact()">
             <option value="general">General Inquiries</option>
             <option value="park">Park Inquiries</option>
             <option value="vendor">Vendor Inquiries</option>
             <option value="camping">Camping Permits</option>
-          </select>
+        </select>
 
         <div id="general">
-            <h3>General</h3>
-            <p>Name</p>
-            <input type="text">
+            <form id="generalForm">
+                <h3>General Inquiries</h3>
+                <p><input type="text" required placeholder="Name"></p>
+                <p><input type="email" required placeholder="Email"></p>
+                <p><input type="tel" required placeholder="Phone Number"></p>
+                <textarea name="generalQ" rows="10" cols="50" placeholder="Put your question here." required></textarea>
+                <p><input type="submit"></p>
+            </form>
         </div>
 
-        <div id="park">
-            <h3>Park</h3>
-            <p>Name</p>
-            <input type="text">
+        <div id="park" style="display:none;">
+            <form id="parkForm">
+                <h3>Park Inquiries</h3>
+                <p><input type="text" required placeholder="Name"></p>
+                <p><input type="email" required placeholder="Email"></p>
+                <p><input type="tel" required placeholder="Phone Number"></p>
+                <textarea name="generalQ" rows="10" cols="50" placeholder="Put your question here." required></textarea>
+                <p><input type="submit"></p>
+            </form>
         </div>
 
-        <div id="vendor">
-            <h3>Vendor</h3>
-            <p>Name</p>
-            <input type="text">
+        <div id="vendor" style="display:none;">
+            <form id="vendorForm">
+                <h3>Vendor Inquiries</h3>
+                <p><input type="text" required placeholder="Business Name"></p>
+                <p><input type="text" required placeholder="Business Primary Contact"></p>
+                <p><input type="email" required placeholder="Business Email"></p>
+                <p><input type="tel" required placeholder="Business Phone Number"></p>
+                <textarea name="generalQ" rows="10" cols="50" placeholder="Put your question here." required></textarea>
+                <p><input type="submit"></p>
+            </form>
         </div>
 
-        <div id="camping">
-            <h3>Vendor</h3>
+        <div id="camping" style="display:none;">
+            <h3>Camping</h3>
             <p>Name</p>
             <input type="text">
         </div>
@@ -44,5 +63,3 @@
 </body>
 
 </html>
-
-

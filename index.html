@@ -5,80 +5,140 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto:300,400,500,700&display=swap" rel="stylesheet">
     <script src="main.js"></script>
+    <title>Welcome to Rudgwick Steam and Country Show!</title>
 </head>
 
 <body>
-    <div class="row">
+
+    <!--Sticky Header-->
+    <div class="row" id="sticky-header">
         <div class="col-12">
             <p>The Showground, Rudgwick, Nr Norsham, West Sussex, England | August 26-28, 2020</p>
         </div>
     </div>
 
-    <div class="row">
+    <!--Hero image-->
+    <div class="row hero-image">
         <div class="col-12">
-            <nav id="topnav">
-                <ul>
-                    <li><a href="#home">LOGO HERE</a></li>
-                    <li class="dropdown">
-                        <a href="javascript:void(0)" class="dropbtn">2020 Show</a>
-                        <div class="dropdown-content">
-                            <a href="#">Link 1</a>
-                            <a href="#">Link 2</a>
-                            <a href="#">Link 3</a>
-                        </div>
-                    </li>
-                    <li class="dropdown">
-                            <a href="javascript:void(0)" class="dropbtn">Plan</a>
-                            <div class="dropdown-content">
-                                <a href="#">Link 1</a>
-                                <a href="#">Link 2</a>
-                                <a href="#">Link 3</a>
-                            </div>
-                        </li>
-                        <li class="dropdown">
-                                <a href="javascript:void(0)" class="dropbtn">Get Involved</a>
+            <!--Main Nav-->
+            <div class="row">
+                <div class="col-12">
+                    <nav id="topnav">
+                        <ul>
+                            <li><a href="#home">LOGO HERE</a></li>
+                            <li class="dropdown">
+                                <a href="javascript:void(0)" class="dropbtn">2020 SHOW</a>
                                 <div class="dropdown-content">
-                                    <a href="#">Link 1</a>
-                                    <a href="#">Link 2</a>
-                                    <a href="#">Link 3</a>
+                                    <a href="#">About</a>
+                                    <a href="#">Events</a>
+                                    <a href="#">Daily Schedule</a>
+                                    <a href="#">Photo Gallery</a>
+                                    <a href="#">Partners</a>
                                 </div>
                             </li>
-                            <li><a href="#contact">Contact</a></li>
-                    <li><button>Buy Tickets</button></li>
-                </ul>
-            </nav>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-12">
-            <div class="hero-image">
-                <div class="hero-text">
-                    <h1>Welcome to Rudgwick</h1>
-                    <p>35 years of family fun</p>
+                            <li class="dropdown">
+                                <a href="javascript:void(0)" class="dropbtn">PLAN</a>
+                                <div class="dropdown-content">
+                                    <a href="#">Admission Prices</a>
+                                    <a href="#">Directions</a>
+                                    <a href="#">Buy Tickets</a>
+                                    <a href="#">Family Amenities</a>
+                                </div>
+                            </li>
+                            <li class="dropdown">
+                                <a href="javascript:void(0)" class="dropbtn">GET INVOLVED</a>
+                                <div class="dropdown-content">
+                                    <a href="#">Vendor Forms</a>
+                                    <a href="#">Volunteers</a>
+                                </div>
+                            </li>
+                            <li><a href="contact.html">CONTACT</a></li>
+                            <li><button class="cta-btn">Buy Tickets</button></li>
+                        </ul>
+                    </nav>
                 </div>
+            </div>
+
+            <div class="hero-text">
+                <h1 class="hero-tag">Celebrating 35 Years of Family Fun</h1>
             </div>
         </div>
     </div>
 
-    <div class="row">
+
+    <!--Events Carousel-->
+    <div class="row" id="events-carousel">
+        <h2>Check out some of our most popular events!</h2>
         <div class="col-3">
-            <p>event 1</p>
+            <img src="img/events-thumbnails/tractor-thumb.jpg" alt="tractor show">
+            <h3>Tractor Show</h3>
         </div>
 
         <div class="col-3">
-            <p>event 2</p>
+            <img src="img/events-thumbnails/beer-thumb.jpg" alt="cheers to beer">
+            <h3>Beer Marque</h3>
         </div>
 
         <div class="col-3">
-            <p>event 3</p>
+            <img src="img/events-thumbnails/farm-thumb.jpg" alt="petting zoo">
+            <h3>Petting Zoo</h3>
         </div>
 
         <div class="col-3">
-            <p>event 4</p>
+            <img src="img/events-thumbnails/ride-thumb.jpg" alt="ferris wheel">
+            <h3>Carnival Rides</h3>
         </div>
     </div>
+
+    <!--Intro to Rudgwick-->
+    <div class="row" id="intro-section">
+        <div class="col-6">
+            <h2>Welcome to Rudgwick!</h2>
+            <p>Bring your family, friends, and furry companions to experience 44 acres of fun in the Great English Countryside! A short picturesque drive from London, it’s the perfect opportunity to experience live music, delectable delicacies, and be whisked back in time to the age of mechanical wonders of industrious steam machinery made right here, in Great Britain!</p>
+        </div>
+        <div class="col-6">
+            <div class="video-responsive">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/2HXciRXkUD4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+
+    </div>
+
+    <!--Countdown-->
+    <div class="row" id="countdown">
+        <p class="countdown-title">COUNTDOWN TO THE SHOW</p>
+        <!--Insert countdown timer-->
+        <p>*Tick tock tick tock goes here*</p>
+
+    </div>
+
+    <!--Bottom CTA-->
+    <div class="row parallax">
+        <p>Attend the Rugdwick Steam and Country Show</p>
+        <button class="cta-btn">Buy Tickets</button>
+    </div>
+
+    <!--Footer-->
+    <footer class="row">
+        <div class="col-4">
+            <h4>Visit</h4>
+            <p>The Showground, Rudgwick.<br>Nr Horsham, West Sussex. <br>RH12 3DF</p>
+
+        </div>
+        <div class="col-4">
+            <h4>Contact</h4>
+            <p>44 07803 581415<br>chanaburi1@aol.com</p>
+        </div>
+        <div class="col-4">
+            <h4>Follow</h4>
+        </div>
+        <div class="col-12">
+            <p class="copyright">All Rights Reserved 2019 Rudgwick Steam and Country Show | Designed by DG8003</p>
+        </div>
+    </footer>
+
 </body>
 
 </html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <h2>Rudgwick Steam and Country Fair Ticket Purchase Form</h2>
+
+    <div id="calculator">
+        <p>Adults (£10.00) <button onclick="addAdult(); grandTotal()">+</button><label id="adult_total">0</label><button
+                onclick="subAdult(); grandTotal()">-</button></p>
+        <p>Children (£5.00) <button onclick="addChild(); grandTotal()">+</button><label
+                id="child_total">0</label><button onclick="subChild(); grandTotal()">-</button></p>
+
+        <p>Food Tokens (£3.00) <button onclick="addFood(); grandTotal()">+</button><label
+                id="food_total">0</label><button onclick="subFood(); grandTotal()">-</button></p>
+        </p>
+
+        <p>Ride Tokens (£4.00) <button onclick="addRide(); grandTotal()">+</button><label
+            id="ride_total">0</label><button onclick="subRide(); grandTotal()">-</button></p>
+        </p>
+
+        <p>DAYS ATTENDING |
+            Thursday <input type="checkbox" id="day1" onclick="checkMultiplier(); grandTotal()">
+            Friday <input type="checkbox" id="day2" onclick="checkMultiplier(); grandTotal()">
+            Saturday <input type="checkbox" id="day3" onclick="checkMultiplier(); grandTotal()"></p>
+
+        <p>Total: <label id="grand_total">£0</label><label id="warning"> </label></p>
+
+        <p><button onclick="clearAll()">Start Over</button><button>Next</button></p>
+
+    </div>
+
+    <div id="contact" style="visibility:visible">
+        <p><label>First Name</label><textarea></textarea><label>Last Name</label><textarea></textarea></p>
+        <p><label>Email</label><textarea></textarea><label>Phone Number</label><textarea></textarea></p>
+        <p><label>Street Address</label><textarea></textarea><label>Country</label><textarea></textarea></p>
+        <p><label>Postal Code</label><textarea></textarea><label>City Town</label><textarea></textarea></p>
+    </div>
+</body>
+
+</html>

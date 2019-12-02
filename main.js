@@ -1,3 +1,13 @@
+/* MOBILE MENU */
+function mobileMenu() {
+    var x = document.getElementById("mobile-links");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
+
 /* EVENT FILTER */
 
 function eventFilter () {
@@ -329,6 +339,21 @@ function purchaseTickets() {
         document.getElementById("thankyou").style.display = "block"
     }
     else {
-        alert("you still have unfilled fields")
+        alert("Please fill out the required fields highlighted in red.")
     }
+}
+
+function leggo() {
+    if (document.getElementById("filter").checked === true) {
+        document.getElementById("myModal").style.display = "block";
+    }
+    else {
+        document.getElementById("myModal2").style.display = "block";
+    }
+}
+
+
+function closeModal () {
+document.getElementById("myModal").style.display = "none";
+document.getElementById("myModal2").style.display = "none";
 }

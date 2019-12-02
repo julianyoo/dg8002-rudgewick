@@ -27,12 +27,13 @@ function validate_contact() {
 }
 
 function thankYou() {
+    document.getElementById("contact-subject").style.display = "none";
     document.getElementById("formType").style.display = "none";
     document.getElementById("park").style.display = "none";
     document.getElementById("general").style.display = "none";
     document.getElementById("vendor").style.display = "none";
     document.getElementById("camping").style.display = "none";
-    document.getElementById("thank_you").innerHTML = "THANKS!";
+    document.getElementById("thank_you").innerHTML = "Your message was sent! Thank you.";
 }
 
 /* TICKET PURCHASE LOGIC */

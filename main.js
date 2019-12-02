@@ -1,3 +1,14 @@
+/* EVENT FILTER */
+
+function eventFilter () {
+    if (document.getElementById("filter").checked === true) {
+        document.getElementById("beer").style.display = "none";
+    }
+    else {
+        document.getElementById("beer").style.display = "block";
+    }
+}
+
 /* COUNTDOWN TIMER */
 
 var countDownDate = new Date("August 27, 2020 12:00:00").getTime();

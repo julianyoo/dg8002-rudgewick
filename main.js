@@ -1,3 +1,13 @@
+/* MOBILE MENU */
+function mobileMenu() {
+    var x = document.getElementById("mobile-links");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
+
 /* EVENT FILTER */
 
 function eventFilter () {
@@ -329,6 +339,6 @@ function purchaseTickets() {
         document.getElementById("thankyou").style.display = "block"
     }
     else {
-        alert("you still have unfilled fields")
+        alert("Please fill out the required fields highlighted in red.")
     }
 }

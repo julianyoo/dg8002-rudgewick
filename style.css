@@ -388,6 +388,15 @@ select, input, textarea{
 }
 /*Media Queries*/
 
+/* MOBILE BREAKPOINT FOR NAV */
+
+@media (min-width: 500px) {
+    .topnav{
+        display: none;
+    }
+
+}
+
 @media (max-width: 500px) {
     #intro-section .col-6{
         width: 100%;
@@ -396,4 +405,54 @@ select, input, textarea{
     .footer-links .col-4{
         width: 100%;
     }
+
+    #sticky-header {
+        display:none;
+    }
+    #main-nav {
+        display: none;
+    }
 }
+
+/* Style the navigation menu */
+.topnav {
+    overflow: hidden;
+    background-color: transparent;
+    position: relative;
+
+  }
+  
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav #mobile-links {
+    display: none;
+  }
+  
+  /* Style navigation menu links */
+  .topnav a {
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    background: white;
+    display: block;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+  }
+  
+  /* Add a grey background color on mouse-over */
+  .topnav a:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  /* Style the active link (or home/logo) */
+  .active {
+    background-color: none;
+    color: white;
+  }

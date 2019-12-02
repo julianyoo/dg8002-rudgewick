@@ -12,6 +12,22 @@
 </head>
 
 <body>
+    <!-- Mobile header-->
+    <div class="topnav">
+        <a href="index.html" class="active rudgwick-logo"><img src="img/rudgwick-logo.png" alt="rudgwick logo"></a>
+        <!-- Navigation links (hidden by default) -->
+        <div id="mobile-links">
+          <a href="#news">2020 Show</a>
+          <a href="#contact">Plan</a>
+          <a href="#about">Get Involved</a>
+          <a href="contact.html">Contact</a>
+          <a href="purchase.html">Buy Tickets</a>
+        </div>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon" onclick="mobileMenu()">
+          <i class="fa fa-bars"></i>
+        </a>
+    </div>
 
     <!--Sticky Header-->
     <div class="row" id="sticky-header">
@@ -24,7 +40,7 @@
     <div class="row hero-image" id="homepage-hero">
         <div class="col-12">
             <!--Main Nav-->
-            <div class="row">
+            <div id="main-nav" class="row">
                 <div class="col-12">
                     <nav id="topnav">
                         <a href="index.html" class="rudgwick-logo"><img src="img/rudgwick-logo.png" alt="rudgwick logo"></a>

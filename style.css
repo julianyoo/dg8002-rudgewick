@@ -235,6 +235,10 @@ li.dropdown {
 
 /*Events Carousel*/
 
+#filter{
+    width: initial;
+}
+
 #events-carousel {
     background-color: black;
     color: white;
@@ -265,6 +269,8 @@ li.dropdown {
 /* Intro to Rudgwick*/
 #intro-section {
     padding: 16px;
+    display: flex;
+    align-items: center;
 }
 
 #intro-section .col-6 {
@@ -290,12 +296,19 @@ li.dropdown {
 #countdown {
     height: 200px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .countdown-title {
     color: #AE3939;
     font-weight: 700;
     font-size: 1.2em;
+}
+
+#timer{
+    font-size: 2em;
+    font-weight: 700;
 }
 
 /*Parallax CTA*/
@@ -386,9 +399,42 @@ select, input, textarea{
 #thankyou {
     display: none;
 }
+
+#warning{
+    color: red;
+}
+
+/*Purchase Form*/
+.purchase-buttons button{
+    border-radius: 1em;
+    border: none;
+    cursor: pointer;
+    margin: 0px 8px;
+    background-color: white;
+}
+
+#calculator input{
+    width: inherit;
+}
+
+.button-box{
+    display: flex;
+    justify-content: space-between;
+}
+
+.legal{
+    font-size: 0.7em;
+}
+
+
+
 /*Media Queries*/
 
 @media (max-width: 500px) {
+    #intro-section{
+        display: block;
+    }
+    
     #intro-section .col-6{
         width: 100%;
     }

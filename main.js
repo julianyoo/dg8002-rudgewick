@@ -193,14 +193,16 @@ var isValid = false;
 function submit() {
     if (document.getElementById("fname").value === "") {
         isValid = false;
-        alert('form is bad')
+        document.getElementById.classList.add("formError");
     } else {
         isValid = true;
+        document.getElementById("fname").style.border = "none"
     }
 
     if (document.getElementById("lname").value === "") {
         isValid = false;
         alert('form is bad')
+        document.getElementById("")
     } else {
         isValid = true;
     }

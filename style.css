@@ -305,3 +305,7 @@ footer p {
     font-size: 10px;
     text-align: center;
 }
+
+.formError {
+  border: 1px red solid;
+}

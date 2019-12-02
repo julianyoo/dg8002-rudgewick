@@ -38,8 +38,6 @@ function thankYou() {
 
 /* TICKET PURCHASE LOGIC */
 
-
-
 var adultTotal = 0
 var childTotal = 0
 var foodTotal = 0
@@ -48,6 +46,7 @@ var multiplier = 0
 var days = [0,0,0]
 var total = 0
 
+/* Ticketing buttons */
 
 function addAdult() {
     adultTotal++
@@ -148,7 +147,8 @@ function grandTotal() {
 
     total = adultCost + childCost + foodCost + rideCost
 
-    return document.getElementById("grand_total").innerHTML = "£" + total
+    return document.getElementById("grand_total").innerHTML = "£" + total,
+    document.getElementById("contact_total").innerHTML = "£" + total
 }
 
 function clearAll() {
@@ -171,5 +171,42 @@ function clearAll() {
         document.getElementById("day3").checked = false;
     } else {
 
+    }
+}
+
+function next() {
+    if (total > 0 ) {
+    document.getElementById("calculator").style.display = "none"
+    document.getElementById("contact").style.display = "block"
+    document.getElementById("warning").innerHTML = ""
+} else {
+    document.getElementById("warning").innerHTML = "You must have something in your basket in order to continue with the transaction."
+}
+}
+
+function back() {
+    document.getElementById("calculator").style.display = "block"
+    document.getElementById("contact").style.display = "none"
+}
+
+var isValid = false;
+
+function submit() {
+    if (document.getElementById("fname").value === "") {
+        isValid = false;
+        alert('form is bad')
+    } else {
+        isValid = true;
+    }
+
+    if (document.getElementById("lname").value === "") {
+        isValid = false;
+        alert('form is bad')
+    } else {
+        isValid = true;
+    }
+
+    if (isValid === true) {
+        alert("form is gud")
     }
 }

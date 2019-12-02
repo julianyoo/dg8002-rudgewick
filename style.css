@@ -360,9 +360,7 @@ footer p {
     text-align: center;
 }
 
-.formError {
-  border: 1px red solid;
-}
+
 
 /*Form Styles*/
 
@@ -381,6 +379,13 @@ select, input, textarea{
     max-width: 500px;
 }
 
+.formError {
+    border: 1px red solid !important;
+  }
+
+#thankyou {
+    display: none;
+}
 /*Media Queries*/
 
 @media (max-width: 500px) {

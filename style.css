@@ -235,6 +235,16 @@ li.dropdown {
 
 /*Events Carousel*/
 
+#filter{
+    width: initial;
+}
+
+.events-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 #events-carousel {
     background-color: black;
     color: white;
@@ -265,6 +275,8 @@ li.dropdown {
 /* Intro to Rudgwick*/
 #intro-section {
     padding: 16px;
+    display: flex;
+    align-items: center;
 }
 
 #intro-section .col-6 {
@@ -290,12 +302,19 @@ li.dropdown {
 #countdown {
     height: 200px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .countdown-title {
     color: #AE3939;
     font-weight: 700;
     font-size: 1.2em;
+}
+
+#timer{
+    font-size: 2em;
+    font-weight: 700;
 }
 
 /*Parallax CTA*/
@@ -386,6 +405,44 @@ select, input, textarea{
 #thankyou {
     display: none;
 }
+
+#warning{
+    color: red;
+}
+
+/*Purchase Form*/
+.purchase-buttons button{
+    border-radius: 1em;
+    border: none;
+    cursor: pointer;
+    margin: 0px 8px;
+    background-color: white;
+    width: 1.5em;
+    height: 1.5em;
+}
+
+#calculator input{
+    width: inherit;
+    margin-right: 16px;
+}
+
+#grand_total, #contact_total{
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #45b758;
+}
+
+.button-box{
+    display: flex;
+    justify-content: space-between;
+}
+
+.legal{
+    font-size: 0.7em;
+}
+
+
+
 /*Media Queries*/
 
 /* MOBILE BREAKPOINT FOR NAV */
@@ -398,6 +455,10 @@ select, input, textarea{
 }
 
 @media (max-width: 500px) {
+    #intro-section{
+        display: block;
+    }
+    
     #intro-section .col-6{
         width: 100%;
     }

@@ -116,6 +116,7 @@ html {
     display: flex;
     justify-content: space-between;
     padding: 0 16px;
+    font-size: 0.8em;
 }
 
 .rudgwick-logo img{
@@ -447,14 +448,26 @@ select, input, textarea{
 
 /* MOBILE BREAKPOINT FOR NAV */
 
-@media (min-width: 500px) {
+@media (min-width: 768px) {
+    #topnav{
+        font-size: 1em;
+    }
+
+}
+
+
+@media (min-width: 580px) {
     .topnav{
+        display: none;
+    }
+    
+    #hero-btn{
         display: none;
     }
 
 }
 
-@media (max-width: 500px) {
+@media (max-width: 579px) {
     #intro-section{
         display: block;
     }
@@ -472,6 +485,20 @@ select, input, textarea{
     }
     #main-nav {
         display: none;
+    }
+    
+    .form-container{
+        margin: 0 auto;
+    }
+    
+    .events-title{
+        display: block;
+        text-align: center;
+        padding-bottom: 16px;
+    }
+    
+    #events-carousel .col-3{
+        width: 50%;
     }
 }
 

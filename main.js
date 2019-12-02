@@ -27,6 +27,7 @@ function validate_contact() {
 }
 
 function thankYou() {
+    document.getElementById("contact-subject").style.display = "none";
     document.getElementById("formType").style.display = "none";
     document.getElementById("park").style.display = "none";
     document.getElementById("general").style.display = "none";

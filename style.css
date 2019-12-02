@@ -193,6 +193,11 @@ li.dropdown {
      background-image: url(img/walking-farm.jpg);
 }
 
+
+#purchase-hero{
+     background-image: url(img/purchase-hero.jpg);
+}
+
 .hero-image {
     height: 80vh;
     background-position: top;
@@ -360,9 +365,17 @@ footer p {
 
 .form-container{
     background-color: #eee;
-    max-width: 800px;
+    max-width: 500px;
     padding: 16px;
     margin: 16px auto;
+}
+
+select, input, textarea{
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    padding: 8px;
+    max-width: 500px;
 }
 
 /*Media Queries*/

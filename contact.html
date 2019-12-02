@@ -72,7 +72,7 @@
     
     <!--Contact Form-->
     <div class="form-container">
-        <h3>Subject</h3>
+        <h3 id="contact-subject">Subject</h3>
         <select id="formType" onchange="validate_contact()">
             <option value="general">General Inquiries</option>
             <option value="park">Park Inquiries</option>
@@ -87,7 +87,7 @@
                 <p><input type="email" required placeholder="Email"></p>
                 <p><input type="tel" required placeholder="Phone Number"></p>
                 <textarea name="generalQ" rows="10" cols="50" placeholder="Put your question here." required></textarea>
-                <p><input type="submit" name="submitButton" onclick="thankYou()" /></p>
+                <p><input type="submit" name="submitButton" onclick="thankYou()" class="cta-btn"></p>
             </form>
         </div>
 
@@ -98,7 +98,7 @@
                 <p><input type="email" required placeholder="Email"></p>
                 <p><input type="tel" required placeholder="Phone Number"></p>
                 <textarea name="generalQ" rows="10" cols="50" placeholder="Put your question here." required></textarea>
-                <p><input type="submit" onclick="thankYou()"></p>
+                <p><input type="submit" onclick="thankYou()" class="cta-btn"></p>
             </form>
         </div>
 
@@ -110,7 +110,7 @@
                 <p><input type="email" required placeholder="Business Email"></p>
                 <p><input type="tel" required placeholder="Business Phone Number"></p>
                 <textarea name="generalQ" rows="10" cols="50" placeholder="Put your question here." required></textarea>
-                <p><input type="submit" onclick="thankYou()"></p>
+                <p><input type="submit" onclick="thankYou()" class="cta-btn"></p>
             </form>
         </div>
 
@@ -121,7 +121,7 @@
                 <p><input type="email" required placeholder="Email"></p>
                 <p><input type="tel" required placeholder="Phone Number"></p>
                 <textarea name="generalQ" rows="10" cols="50" placeholder="Put your question here." required></textarea>
-                <p><input type="submit" onclick="thankYou()"></p>
+                <p><input type="submit" onclick="thankYou()" class="cta-btn"></p>
             </form>
         </div>
 

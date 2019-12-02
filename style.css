@@ -185,9 +185,16 @@ li.dropdown {
 
 /* Hero Image */
 
-.hero-image {
+#homepage-hero{
     background-image: url(img/homepage.jpg);
-    height: 100vh;
+}
+
+#contact-hero{
+     background-image: url(img/walking-farm.jpg);
+}
+
+.hero-image {
+    height: 80vh;
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -204,11 +211,22 @@ li.dropdown {
     color: white;
 }
 
+.contact-hero-text, .purchase-hero-text{
+    padding: 24px;
+}
+
+.title-accent{
+    border-top: 3px solid #FFE417;
+    width: 50px;
+    margin: 0;
+}
+
 .hero-tag {
     font-family: 'Pacifico', sans-serif;
     text-decoration: underline;
     text-decoration-color: #FFE417;
 }
+
 
 /*Events Carousel*/
 
@@ -312,7 +330,6 @@ footer {
 
 footer h4 {
     font-size: 1.2em;
-
 }
 
 footer p {
@@ -323,6 +340,12 @@ footer p {
     padding: 16px 8px;
 }
 
+.footer-links a{
+    color: white;
+    padding: 0 8px;
+    text-decoration: none;
+}
+
 .copyright {
     background-color: black;
     color: white;
@@ -330,4 +353,26 @@ footer p {
     padding: 8px;
     font-size: 10px;
     text-align: center;
+}
+
+
+/*Form Styles*/
+
+.form-container{
+    background-color: #eee;
+    max-width: 800px;
+    padding: 16px;
+    margin: 16px auto;
+}
+
+/*Media Queries*/
+
+@media (max-width: 500px) {
+    #intro-section .col-6{
+        width: 100%;
+    }
+    
+    .footer-links .col-4{
+        width: 100%;
+    }
 }

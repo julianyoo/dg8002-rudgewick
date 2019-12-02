@@ -115,7 +115,7 @@
     <div class="row" id="events-carousel">
         <div class="events-title">
         <h2>Check out some of our most popular events! </h2>
-        <div><input id="filter" type="checkbox" unchecked onclick="eventFilter()" /> Kid-Friendly</div>
+        <div><input id="filter" type="checkbox" unchecked onclick="eventFilter(), leggo()" /> Kid-Friendly</div>
             </div>
         <div class="col-3">
             <img src="img/events-thumbnails/tractor-thumb.jpg" alt="tractor show">
@@ -189,6 +189,22 @@
             <p class="copyright">All Rights Reserved 2019 Rudgwick Steam and Country Show | Designed by DG8003</p>
         </div>
     </footer>
+
+<div id="myModal" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <p>Kid Friendly Mode Activated!</p>
+  </div>
+</div>
+
+<div id="myModal2" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <p>Kid Friendly Mode Deactivated</p>
+        </div>
+      </div>
 
 </body>
 

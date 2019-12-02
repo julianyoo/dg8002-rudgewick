@@ -342,3 +342,18 @@ function purchaseTickets() {
         alert("Please fill out the required fields highlighted in red.")
     }
 }
+
+function leggo() {
+    if (document.getElementById("filter").checked === true) {
+        document.getElementById("myModal").style.display = "block";
+    }
+    else {
+        document.getElementById("myModal2").style.display = "block";
+    }
+}
+
+
+function closeModal () {
+document.getElementById("myModal").style.display = "none";
+document.getElementById("myModal2").style.display = "none";
+}
